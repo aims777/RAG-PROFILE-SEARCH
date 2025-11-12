@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "rag-profile-search",
+  "description": "An AI-powered RAG-based profile search web app built with Streamlit and Sentence Transformers.",
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ]
+}
